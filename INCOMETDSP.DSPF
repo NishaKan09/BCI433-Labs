@@ -1,0 +1,42 @@
+     A          R GETINCOME                 CF03(03 'EXIT PROGRAM')
+     A                                  2 73DATE
+     A                                      EDTCDE(Y)
+     A                                  2  2USER
+     A                                  3  2'NISHANTHA KANAGASAPABATHY'
+     A                                  2 32'I N C O M E  T A X E S '
+     A                                  5 11'Income:'
+     A                                  7 11'Married?'
+     A                                  9 25'A L L O W A B L E  D E D U C T I O-
+     A                                       N S'
+     A                                 11 11'Student Expense:'
+     A                                 11 41'Charitable Donations:'
+     A            INCOMEAMT      8  0B  5 19
+     A  60                                  DSPATR(PR)
+     A  98                                  DSPATR(PC)
+     A                                      EDTCDE(2)
+     A            MARRIED        1   B  7 20VALUES('Y' 'N')
+     A  60                                  DSPATR(PR)
+     A  97                                  DSPATR(PC)
+     A            STDEXPENSE     7  0B 11 29EDTCDE(2)
+     A  60                                  DSPATR(PR)
+     A            DONATIONS      7  0B 11 63EDTCDE(2)
+     A  60                                  DSPATR(PR)
+     A                                  7 23'Y/N'
+     A  98                              5 31'Zero Income Amount'
+     A                                  7 31'Blank Marital Status'
+     A  97                                  DSPATR(PC)
+     A          R YOURTAX                   CF03(03 'Exit Program')
+     A                                      OVERLAY
+     A                                 13 13'Deductions Allowed'
+     A                                 15 13'Adjusted Income Amount:'
+     A                                 17 13'Tax Rate: '
+     A                                 19 13'Taxes Owing:'
+     A            DEDUCTIONS     8Y 0O 13 42EDTCDE(1)
+     A            AINCOMEAMT     8Y 0O 15 42EDTCDE(1)
+     A            TAXRATE        2Y 2O 17 50EDTCDE(1)
+     A            TAXAMT         8Y 0O 19 46EDTCDE(1)
+     A                                 21 13'Your Taxes Are Due in'
+     A            DAYSTOPAY      3Y 0O 21 35EDTCDE(2)
+     A                                 21 41'Days'
+     A                                 23 17'F3 - Exit'
+                    
