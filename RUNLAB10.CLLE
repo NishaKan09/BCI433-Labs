@@ -1,0 +1,24 @@
+             PGM
+             CRTRPGMOD  MODULE(DAYFUNCTS) SRCFILE(LAB10INTRO) SRCMBR(DAYFUNCTS)
+             CRTRPGMOD  MODULE(DAYSRPG) SRCFILE(LAB10INTRO) SRCMBR(DAYSRPG)
+
+             CRTPGM     WHATDAY MODULE(DAYSRPG DAYFUNCTS)
+
+
+             SNDUSRMSG  MSG('Program using Select Statement Module DAYFUNCTS')
+             DSPPGM     WHATDAY DETAIL(*MODULE)
+             DSPPFM     FILE(DM434C09/LAB10INTRO) MBR(DAYFUNCTS)
+             CALL       WHATDAY 'SELECT SOLUTION'
+
+             CRTRPGMOD  MODULE(DAYFUNCTS2) SRCFILE(LAB10INTRO) SRCMBR(DAYFUNCTS2)
+             CRTRPGMOD  MODULE(DAYSRPG) SRCFILE(LAB10INTRO) SRCMBR(DAYSRPG)
+
+             CRTPGM     WHATDAY MODULE(DAYSRPG DAYFUNCTS2)
+
+             SNDUSRMSG  MSG('A better idea 1 year later - Program using Array Module')
+             DSPPGM     WHATDAY DETAIL(*MODULE)
+             DSPPFM     FILE(DM434C09/LAB10INTRO) MBR(DAYFUNCTS2)
+             CALL       WHATDAY 'ARRAY SOLUTION'
+
+
+             ENDPGM                                            
