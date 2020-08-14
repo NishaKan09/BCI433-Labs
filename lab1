@@ -1,0 +1,14 @@
+/*********************************************************************/
+/* SYSVALPRG - DISPLAY SYSTEM VALUES                                 */
+/*                                                                   */
+/* CODED BY: NISHANTHA KANAGASAPABATHY                               */
+/*                                                                   */
+/* SIGNATURE: _______________________________________________        */
+/*********************************************************************/
+
+DSPLIBL
+EDTLIBL
+DSPLIBL
+DSPSYSVAL QSYSLIBL
+DSPSYSVAL QUSRLIBL
+DSPSYSVAL QMODEL  
