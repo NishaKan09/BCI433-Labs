@@ -1,0 +1,26 @@
+     A          R RECORD1
+     A                                      CA03(03)
+     A                                      CF21(21)
+     A                                  1 64DATE
+     A                                      EDTCDE(Y)
+     A                                  2 64TIME
+     A                                  3 64'LAB4DF'
+     A                                  1 38'Lab 4'
+     A                                  6  3'Please select one of the following-
+     A                                       options:'
+     A                                  7 14'1.  System security level'
+     A                                  8 14'2.  Maximum Password Length'
+     A                                  9 14'3.  Who is running this program?'
+     A                                 10 14'4.  Signed on User''s Initial Prog-
+     A                                      ram '
+     A                                 11 14'5.  My % of storage used'
+     A                                 14 17'Option:'
+     A            OPTION         2A  B 14 25
+     A  30                                  DSPATR(RI)
+     A  30                                  DSPATR(PC)
+     A            MSGTXT        70A  O 18  6
+     A                                 20  4'F3=Exit'
+     A  30                             14 29'Valid option must be entered'
+     A                                  1  3'Nishantha Kanagasapabathy'
+     A                                  2  3'Your Full Name Above'
+                                
