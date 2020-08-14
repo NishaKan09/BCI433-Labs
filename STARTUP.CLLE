@@ -1,0 +1,9 @@
+             PGM
+             CALL       QGPL/STRJOB
+             ADDLIBLE   SENECAPAY
+             ADDLIBLE   DMUC09
+             ADDLIBLE   BCI433LIB
+             MONMSG     MSGID(CPF2103)
+             DSPSYSLVL  OUTPUT(*DISPLAY)
+
+             ENDPGM 
