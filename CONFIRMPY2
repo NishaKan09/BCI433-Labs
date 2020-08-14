@@ -1,0 +1,30 @@
+     A          R RECORD1
+     A                                  2  3USER
+     A                                  3  3'NIHANTHA KANAGASAPABATHY'
+     A                                  2 26'S E N E C A'
+     A                                  2 39'Payroll Program Completed'
+     A                                  2 71DATE
+     A                                      EDTCDE(Y)
+     A                                  3 71TIME
+     A                                  4 11'Rates:'
+     A                                 10 11'Totals:'
+     A                                  5 21'Day Rate:'
+     A                                  6 21'Afternoon Rate:'
+     A                                  7 21'Night Rate:'
+     A                                 11 21'Regular Pay:'
+     A                                 12 21'Overtime Pay:'
+     A                                 13 21'Company Payout:'
+     A            DAYRATE   R    5  2   5 41REFFLD(SHIFTRATER/DAYRATE +
+                                            SENECAPAY/SHIFTRATES)
+                                            EDTCDE(1)
+     A            AFTNRATE  R    5  2   6 41REFFLD(SHIFTRATER/AFTNRATE +
+                                            SENECAPAY/SHIFTRATES)
+                                            EDTCDE(1)
+     A            NIGHTRATE R    5  2   7 41REFFLD(SHIFTRATER/NIGHTRATE +
+                                            SENECAPAY/SHIFTRATES)
+                                            EDTCDE(1)
+     A            TOTREGPAY      9Y 2O 11 41EDTCDE(1)
+     A            TOTOVTPAY      9Y 2O 12 41EDTCDE(1)
+     A            TOTWKPAY       9Y 2O 13 41EDTCDE(1 $)
+
+     A            SHIFTTYPE     30   O  9 26              
