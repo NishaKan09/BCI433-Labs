@@ -1,0 +1,16 @@
+     A          R OUTPUT                    CF03(03)
+     A                                      OVERLAY
+     A            RESULT1       30   O  9 20
+     A            RESULT2       30   O 10 20
+     A                                 14 20'F3 - Exit'
+     A          R INPUT
+     A            DATEIN          L  B  6 37
+     A  90                                  DSPATR(PR)
+     A                                  6 21'Enter a Date:'
+     A                                  6 50'yyyy-mm-dd'
+     A                                  1 21'D a y   O f   W e e k   F u n c t -
+     A                                      i o n'
+     A                                  1  2USER
+     A                                  1 72DATE
+     A                                      EDTCDE(Y)
+     A                                  2  2'Nisha Kanagasapabathy' 
