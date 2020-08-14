@@ -1,0 +1,62 @@
+     A          R TITLE
+     A                                  1 45'Weekly Payroll Report'
+     A                                  1 89'Page:'
+     A                                  1 94PAGNBR
+     A                                  1  3DATE(*YY)
+     A                                      EDTCDE(Y)
+     A                                  1 15TIME
+     A                                  2  3'Name: Nishantha Kanagasapabathy'
+     A                                  3  3 ' '
+     A            SHIFTTYPE     30      2 41
+     A          R COLHDG                    SPACEB(1)
+     A                                      SPACEA(1)
+     A                                     6'Employee'
+     A                                    19'Work'
+     A                                    29'Pay'
+     A                                    37'Hourly'
+     A                                    47'Hours'
+     A                                    56'Regular'
+     A                                    71'Overtime'
+     A                                    89'Total'
+     A                                     6'Number'
+     A                                      SPACEB(1)
+     A                                    19'Shift'
+     A                                    29'Grade'
+     A                                    37'Rate'
+     A                                    47'Worked'
+     A                                    56'Pay'
+     A                                    73'Pay'
+     A                                    90'Pay'
+     A          R EMPDETAIL                 SPACEB(1)
+     A            EMPNUM    R    9S 0      5REFFLD(SHIFTWEEK/EMPNUM SENECAPAY/S-
+     A                                      HIFTWEEK)
+     A                                      EDTWRD('0   -   -   -')
+     A            WORKSHIFT R    1A       20REFFLD(SHIFTWEEK/WORKSHIFT +
+     A                                      SENECAPAY/SHIFTWEEK)
+     A            PAYGRADE  R             30REFFLD(SHIFTWEEK/PAYGRADE +
+     A                                      SENECAPAY/SHIFTWEEK)
+     A            HOURLYRATE     5  2     37EDTCDE(1)
+     A            HRSWORKED R             48REFFLD(SHIFTWEEK/HRSWORKED +
+     A                                      SENECAPAY/SHIFTWEEK)
+     A                                      EDTCDE(1)
+     A            REGULARPAY     7  2     55EDTCDE(1)
+     A            OVERPAY        7  2     70EDTCDE(2)
+     A            WEEKLYPAY      7  2     86EDTCDE(1)
+     A          R TOTALS                    SPACEB(2)
+     A                                    41'Totals:'
+     A            TOTREGPAY      9  2     51
+     A                                      EDTCDE(1 $)
+     A            TOTOVTPAY      9  2     66EDTCDE(1 $)
+     A            TOTWKPAY       9  2     82EDTCDE(1 $)
+
+
+
+     A*%%RS+<record-sequences>
+     A*%%RS+ <sequence name="Untitled">
+     A*%%RS+  <device type="printer" width="132" height="66" />
+     A*%%RS+  <record-write record-format="TITLE" />
+     A*%%RS+  <record-write record-format="COLHDG" />
+     A*%%RS+  <record-write record-format="EMPDETAIL" />
+     A*%%RS+  <record-write record-format="TOTALS" />
+     A*%%RS+ </sequence>
+     A*%%RS </record-sequences>         
